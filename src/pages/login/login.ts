@@ -1,11 +1,18 @@
+
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 
+
 @Component({
-  selector: 'page-home',
-  templateUrl: 'home.html'
+  selector: 'page-login',
+  templateUrl: 'login.html'
 })
-export class HomePage {
+export class LoginPage {
+
+  main(){
+    this.navCtrl.push('MainPage');
+  }
+  
 
   constructor(public navCtrl: NavController) {
 
